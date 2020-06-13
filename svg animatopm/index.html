@@ -40,8 +40,17 @@
 
   <!-- pae2  -->
   <div class="bck">
-    <button type="button" id="start1" class="btn  btn-outline-success btn-lg">start animation </button>
-    <button type="button" id="start2" class="btn btn-outline-dark btn-lg">end animation </button>
+
+    <audio id="myAudio">
+      <source src="前前前世 RADWIMPS.mp3" type="audio/ogg">
+      <source src="前前前世 RADWIMPS.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Click the buttons to play or pause the audio.</p>
+
+    <button onclick="playAudio()" type="button" id="start1" class="btn  btn-outline-success btn-lg">start animation </button>
+    <button onclick="pauseAudio()" type="button" id="start2" class="btn btn-outline-dark btn-lg">end animation </button>
   </div>
   </div>
   <div class="footer">

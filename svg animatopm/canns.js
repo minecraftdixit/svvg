@@ -1,3 +1,15 @@
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.load();
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+
+
 let ctx,
   amplitude = 50,
   wavelength = .01,
