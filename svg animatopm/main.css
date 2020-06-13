@@ -1,0 +1,152 @@
+html,body{
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+background-color:black;
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+
+}
+
+.btn {
+opacity: 1;
+  position: relative;
+  float:none;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* text */
+  .text-content{
+z-index: 99;
+top:0px;
+overflow: hidden;
+color: WHITE;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 25px;
+      background-color:rgb(255, 190, 14);
+    border-top: 12px red solid ;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image:url("headerpage.svg");
+      background-attachment: fixed;
+height:70vh;
+text-align:right;
+  font-size: 80px;
+  	animation-name: slideExpandUp;
+animation-duration: 1.6s;
+  animation-timing-function: ease-out;
+  	visibility: visible !important;
+  }
+@keyframes slideExpandUp {
+  	0% {
+  		transform: translateY(100%) scaleX(0.5);
+  	}
+  	30%{
+  		transform: translateY(-8%) scaleX(0.5);
+  	}
+  	40%{
+  		transform: translateY(2%) scaleX(0.5);
+  	}
+  	50%{
+  		transform: translateY(0%) scaleX(1.1);
+  	}
+  	60%{
+  		transform: translateY(0%) scaleX(0.9);
+  	}
+  	70% {
+  		transform: translateY(0%) scaleX(1.05);
+  	}
+  	80%{
+  		transform: translateY(0%) scaleX(0.95);
+  	}
+  	90% {
+  		transform: translateY(0%) scaleX(1.02);
+  	}
+  	100%{
+  		transform: translateY(0%) scaleX(1);
+  	}
+  }
+
+}
+.BCCK{
+  padding: 0;
+  background-position: center;
+
+  height: 100vh;
+  width:100%;
+  overflow: hidden;
+}
+/* canvas :  */
+#cvs{
+
+overflow: hidden;
+padding-bottom: 1px;
+  height: 40vh;
+  width:100%;
+
+}
+
+
+.bck{
+  padding-top: 0px;
+  opacity:0.5;
+
+  background-size: cover;
+  background-image: url("part1.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  animation: back 3s linear  infinite;
+animation-play-state: paused;
+
+}
+@keyframes back {
+  0%{
+    background-image:url("part1.jpg");
+  }
+  10%{
+    background-image:url("2.png");
+
+    }
+20%{
+      background-image:url("3.png");
+}
+30%{
+      background-image:url("4.png");
+}
+40%{
+      background-image:url("5.png");
+}
+50%{
+      background-image:url("6.png");
+}
+60%{
+      background-image:url("7.png");
+}
+70%{
+      background-image:url("8.png");
+}
+80%{
+      background-image:url("9.png");
+}
+90%{
+      background-image:url("10.png");
+}
+100%{
+      background-image:url("12.png");
+}
+  }
+
+
+/* footer */
+
+
+.footer{
+  padding:
+  height: 40vh;
+  width: 100%;
+  background-color: black;
+  border-top:white 5px solid ;
+
+}
