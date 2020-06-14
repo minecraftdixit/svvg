@@ -106,35 +106,35 @@ animation-play-state: paused;
     background-image:url("part1.jpg");
   }
   10%{
-    background-image:url("2.png");
+    background-image:url("2.jpg");
 
     }
 20%{
-      background-image:url("3.png");
+      background-image:url("3.jpg");
 }
 30%{
-      background-image:url("4.png");
+      background-image:url("4.jpg");
 }
 40%{
-      background-image:url("5.png");
+      background-image:url("5.jpg");
 }
 50%{
-      background-image:url("6.png");
+      background-image:url("6.jpg");
 }
 60%{
-      background-image:url("7.png");
+      background-image:url("7.jpg");
 }
 70%{
-      background-image:url("8.png");
+      background-image:url("8.jpg");
 }
 80%{
-      background-image:url("9.png");
+      background-image:url("9.jpg");
 }
 90%{
-      background-image:url("10.png");
+      background-image:url("10.jpg");
 }
 100%{
-      background-image:url("12.png");
+      background-image:url("12.jpg");
 }
   }
 
