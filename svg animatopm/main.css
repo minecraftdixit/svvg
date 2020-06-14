@@ -86,20 +86,44 @@ padding-bottom: 1px;
   width:100%;
 
 }
+#ca{
+height: 50vh;
+  font-size: 200px;
+  color:white;
+  position: relative;
+  text-align: center;
+  	animation-name: floating;
+  	animation-duration: 1.5s;
+  	animation-iteration-count: infinite;
+
+  }
+
+  @keyframes floating {
+  	0% {
+  		transform: translateY(0%);
+  	}
+  	50% {
+  		transform: translateY(8%);
+  	}
+  	100% {
+  		transform: translateY(0%);
+  	}
+  }
 
 
 .bck{
   padding-top: 0px;
   opacity:0.5;
-
   background-size: cover;
   background-image: url("part1.jpg");
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
-  animation: back 3s linear  infinite;
-animation-play-state: paused;
 
+  width: 100%;
+  animation-delay: 3s;
+  animation: back 4s linear  infinite;
+animation-play-state: paused;
+transition: 5s back;
 }
 @keyframes back {
   0%{
@@ -148,5 +172,49 @@ animation-play-state: paused;
   width: 100%;
   background-color: black;
   border-top:white 5px solid ;
+
+}
+@media screen and (min-width: 601px) {
+  p #ca{
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p#ca {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}@media screen and (min-width: 601px) {
+  div.text-content {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.text-content {
+    font-size: 30px;
+  }
+}
+
+.teffect{
+
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size:  150px;
+
+
 
 }

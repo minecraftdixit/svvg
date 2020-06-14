@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <div class="BCCK">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
       <a class="navbar-brand" href="#">Animation</a>
@@ -30,16 +31,26 @@
     </nav>
 
 
-    <canvas id="cvs"></canvas>
-    <div class="text-content ">
-      hello there take a look into svg animation
+    <span><canvas id="cvs"></canvas>
+      <div class="teffect">
 
-    </div>
-    <button type="button" class="btn btn-primary btn-lg">click here</button>
+
+        <h1>
+          <a href="#" class="typewrite" data-period="2000" data-type='[ "See the animation!!.", "See live!!", "landscape mode ON!!" ]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+      </div>
+      <p id="ca">scroll below</p>
+      <div class="text-content ">
+        hello there take a look
+        below
+      </div>
+      <a class="btn btn-primary btn-large" href="#sec2" role="button">click here</a>
   </div>
 
   <!-- pae2  -->
-  <div class="bck">
+  <div class="bck" id="sec2">
 
     <audio id="myAudio">
       <source src="前前前世 RADWIMPS.mp3" type="audio/ogg">
@@ -72,6 +83,7 @@
   <script src="canns.js" charset="utf-8"></script>
   <script type="text/javascript">
     $(function() {
+      alert("please use landscape mode in mobile phones for better view");
       $("#start1").click(function() {
         $(".bck").css({
           "animation-play-state": "running",
