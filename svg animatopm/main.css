@@ -30,8 +30,8 @@ border-radius: 25px;
     background-repeat: no-repeat;
     background-image:url("headerpage.svg");
       background-attachment: fixed;
-height:70vh;
-text-align:right;
+height:40vh;
+text-align:center;
   font-size: 80px;
   	animation-name: slideExpandUp;
 animation-duration: 1.6s;
@@ -78,13 +78,14 @@ animation-duration: 1.6s;
   overflow: hidden;
 }
 /* canvas :  */
-#cvs{
 
+#cvs{
+  margin-top:100px;
 overflow: hidden;
 padding-bottom: 1px;
-  height: 40vh;
+  height: 60vh;
   width:100%;
-
+background-color: black;
 }
 #ca{
 height: 50vh;
@@ -112,8 +113,8 @@ height: 50vh;
 
 
 .bck{
-  padding-top: 0px;
-  opacity:0.5;
+   margin-left: 20
+    opacity:0.5;
   background-size: cover;
   background-image: url("part1.jpg");
   background-repeat: no-repeat;
@@ -121,7 +122,7 @@ height: 50vh;
 
   width: 100%;
   animation-delay: 3s;
-  animation: back 4s linear  infinite ;
+  animation: back 2s linear  infinite ;
 animation-play-state: paused;
 transition: 5s back;
 }
@@ -225,4 +226,54 @@ li{
   height: 30vh;
   color: white;
   text-align: center;
+}
+/* svgg voiced */
+
+
+
+#voiced{
+
+  overflow: hidden;
+  position: absolute;
+height:40vh;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+
+}
+.card-body{
+  background: linear-gradient( rgb(81, 182, 245),rgb(102, 246, 155));
+}
+.text-muted{
+  text-align: right;
+
+}
+.talk{
+margin-left: 80px;
+  position:absolute;
+  top: 50%;
+  left:30%;
+  transform: translate(-50%,-50%);
+
+  border-radius: 10% 10%;
+   color: white;
+  background-color: rgb(24, 73, 191);
+}
+
+@media screen and (max-width: 400px) {
+h3.text-muted{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h3.text-muted{
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  svg#voiced{
+      opacity:0;
+
+  }
 }
