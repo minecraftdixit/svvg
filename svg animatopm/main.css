@@ -260,18 +260,18 @@ margin-left: 80px;
   background-color: rgb(24, 73, 191);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
 h3.text-muted{
     font-size: 10px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
   h3.text-muted{
     font-size: 30px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
   svg#voiced{
       opacity:0;
 
